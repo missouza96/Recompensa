@@ -75,6 +75,7 @@
         android:text="limpar" />
 
     <TextView
+        android:text="resultado"
         android:id="@+id/resultado"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -27,6 +27,7 @@ public class AddPontoActivity extends AppCompatActivity {
         setContentView(R.layout.fragment_add_ponto);
         vinculaViewPeloId();
 
+
         buttonCadastrar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -34,8 +35,8 @@ public class AddPontoActivity extends AppCompatActivity {
                 String pedido = editTextNumeroPedido.getText().toString();
                 String valorPonto = editTextValorPonto.getText().toString();
 
-                if(valido(id,pedido,valorPonto)){
-                    resultado.setText(valorPonto);
+                if(valido(id, pedido, valorPonto)){
+                    //resultado.setText(valorPonto);
                     //Ponto ponto = new Ponto().addId(id).addPedido(pedido).addValor(valorPonto);
                     //PontoRepository.add(ponto);
                     limpar();
@@ -69,6 +70,7 @@ public class AddPontoActivity extends AppCompatActivity {
         editTextNumeroPedido.setText("");
         editTextValorPonto.setText("");
     }
+
 
     public void vinculaViewPeloId(){
         editTextId = findViewById(R.id.editId);
