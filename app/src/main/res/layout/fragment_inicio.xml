@@ -3,65 +3,11 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/LinearLayout_inicio"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="10dp">
-
-    <LinearLayout
-        android:background="@color/colorBarras"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_marginLeft="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Id"
-            android:textStyle="bold"
-            android:textColor="@color/cardview_light_background"
-            android:textSize="36dp"></TextView>
-        <TextView
-            android:layout_marginLeft="15dp"
-            android:id="@+id/numID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/colorTitulo1"
-            android:textSize="36dp"></TextView>
-
-    </LinearLayout>
+    android:id="@+id/LinearLayout_inicio">
 
     <ListView
-        android:id="@+id/listPontos"
+        android:id="@+id/listPonto"
         android:layout_width="match_parent"
-        android:layout_height="613dp"
-        android:layout_gravity="center"></ListView>
-
-    <LinearLayout
-        android:layout_gravity="bottom"
-        android:background="@color/colorBarras"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:layout_marginLeft="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TOTAL PONTOS:"
-            android:textStyle="bold"
-            android:textColor="@color/colorTitulo1"
-            android:textSize="24dp"></TextView>
-
-        <TextView
-            android:layout_marginLeft="15dp"
-            android:id="@+id/totalPontos"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/colorTitulo1"
-            android:textSize="36dp"></TextView>
-    </LinearLayout>
+        android:layout_height="match_parent"></ListView>
 
 </LinearLayout>

@@ -18,7 +18,6 @@ public class AddPontoActivity extends AppCompatActivity {
     private EditText editTextValorPonto;
     private Button buttonCadastrar;
     private Button buttonLimpar;
-    private TextView resultado;
 
 
     @Override
@@ -78,7 +77,6 @@ public class AddPontoActivity extends AppCompatActivity {
         editTextValorPonto = findViewById(R.id.editPonto);
         buttonCadastrar = findViewById(R.id.buttonCadastrar);
         buttonLimpar = findViewById(R.id.buttonLimpar);
-        resultado = findViewById(R.id.resultado);
 
     }
 }

@@ -24,20 +24,31 @@ import java.util.ArrayList;
 public class InicioActivity extends AppCompatActivity {
 
     private ListView listPontos;
-    private TextView totalPontos; //fazer a soma dos pontos e mostrar
-    private ArrayList<Ponto> pontos;
-    private ArrayAdapter<Ponto> adapter;
+    private String[] itens = {
+        "100","50","20","15","150,32","89,50","12","24"};
 
-    @SuppressLint("WrongViewCast")
+    //private TextView totalPontos; //fazer a soma dos pontos e mostrar
+    //private ArrayList<Ponto> pontos;
+    //private ArrayAdapter<Ponto> adapter;
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
         setContentView(R.layout.fragment_inicio);
 
-        totalPontos = findViewById(R.id.totalPontos);
-        listPontos = findViewById(R.id.listPontos);
+        listPontos = findViewById(R.id.listPonto);
+
+        //criar adaptador para a lista
+        ArrayAdapter<String> adaptador = new ArrayAdapter<String>(
+                getApplicationContext(),
+                android.R.layout.simple_list_item_1,
+                android.R.id.text1,
+                itens
+        );
+        //add adaptador na lista
+        listPontos.setAdapter(adaptador);
 
 
+/*
         criarAdapter();
         listPontos.setAdapter(adapter);
         listPontos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -73,6 +84,7 @@ public class InicioActivity extends AppCompatActivity {
 
     private void criarAdapter(){
         pontos = PontoRepository.getPontos();
-        adapter = new ArrayAdapter<>(InicioActivity.this,R.layout.fragment_inicio, pontos);
+        adapter = new ArrayAdapter<>(InicioActivity.this,R.layout.fragment_inicio, pontos); */
+
     }
 }

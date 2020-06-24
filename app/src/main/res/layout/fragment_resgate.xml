@@ -1,11 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/LinearLayout_resgate">
+
+
+    <TextView
+        android:id="@+id/tituloResgate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="RESGATAR\nPONTOS"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"></TextView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/idCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="sans-serif"
+            android:text="Total de pontos:"
+            android:textColor="@color/textoPreto"
+            android:textSize="15dp"></TextView>
+
+        <TextView
+            android:id="@+id/totalPontos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200,00."
+            android:textSize="15dp"
+            android:textColor="@color/textoPreto"
+            android:layout_marginHorizontal="2dp"
+            android:fontFamily="sans-serif"></TextView>
+    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="fragment resgate pontos"></TextView>
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Brindes disponíveis: 2"
+        android:textColor="@color/textoPreto"
+        android:textSize="15dp">></TextView>
+
+
+
+    <Button
+        android:id="@+id/buttonResgatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="resgatar"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"></Button>
+
+
+
 
 </LinearLayout>

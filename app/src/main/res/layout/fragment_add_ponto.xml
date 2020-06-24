@@ -3,46 +3,53 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/LinearLayout_ponto"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="10dp"
-    android:layout_marginLeft="5dp">
+    android:id="@+id/LinearLayout_ponto">
 
     <TextView
         android:id="@+id/tituloCadastro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="CADASTRAR PONTO"
-        android:textColor="?android:attr/textColorPrimaryNoDisable"
-        android:textStyle="bold" />
+        android:text="CADASTRAR\nPONTO"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Id ou CPF"
-        android:textColor="?android:attr/textColorPrimaryNoDisable"/>
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/textoPreto"/>
 
     <EditText
         android:id="@+id/editId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:textSize="12sp"/>
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="15dp"/>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nº Pedido"
-        android:textColor="?android:attr/textColorPrimaryNoDisable"/>
+        android:textSize="15dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/textoPreto"/>
 
     <EditText
         android:id="@+id/editPedido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:textSize="12sp"/>
 
     <TextView
@@ -50,13 +57,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Pontos"
-        android:textColor="?android:attr/textColorPrimaryNoDisable" />
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/textoPreto" />
 
     <EditText
         android:id="@+id/editPonto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number|numberDecimal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
         android:textSize="12sp"/>
 
     <Button
@@ -64,7 +74,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cadastrar"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
 
     <Button
         android:id="@+id/buttonLimpar"
@@ -72,14 +84,8 @@
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"
         android:onClick="limpar"
-        android:text="limpar" />
-
-    <TextView
-        android:text="resultado"
-        android:id="@+id/resultado"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:textColor="@color/colorAccent"></TextView>
+        android:text="limpar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
 
 </LinearLayout>
